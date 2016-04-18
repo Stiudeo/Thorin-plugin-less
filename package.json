@@ -1,0 +1,19 @@
+{
+  "name": "thorin-plugin-less",
+  "author": "Stiudeo",
+  "version": "1.0.1",
+  "dependencies": {
+    "less": "^2.6.1"
+  },
+  "description": "Thorin.js less plugin",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stiudeo/Thorin-plugin-less"
+  },
+  "homepage": "http://thorinjs.com",
+  "bugs": {
+    "url": "https://github.com/Stiudeo/Thorin-plugin-less/issues"
+  }
+}
