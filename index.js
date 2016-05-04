@@ -92,3 +92,4 @@ module.exports = function(thorin, opt, pluginName) {
 
   return lessObj;
 };
+module.exports.publicName = 'less';
