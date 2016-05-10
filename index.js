@@ -90,6 +90,19 @@ module.exports = function(thorin, opt, pluginName) {
     });
   };
 
+  /*
+  * Ensure that we have app/styles folder.
+  * */
+  lessObj.setup = function DoSetup(done) {
+    const SETUP_DIRECTORIES = ['app/styles'];
+    for(let i=0; i < SETUP_DIRECTORIES.length; i++) {
+      try {
+        thorin.util.fs.ensureDirSync(path.normalize(thorin.root + '/' + SETUP_DIRECTORIES[i]));
+      } catch(e) {}
+    }
+    done();
+  }
+
   return lessObj;
 };
 module.exports.publicName = 'less';
