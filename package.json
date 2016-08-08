@@ -1,9 +1,9 @@
 {
   "name": "thorin-plugin-less",
   "author": "Stiudeo",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "dependencies": {
-    "less": "^2.6.1"
+    "less": "2.6.1"
   },
   "description": "Thorin.js less plugin",
   "main": "index.js",
