@@ -56,7 +56,7 @@ module.exports = function(thorin, opt, pluginName) {
     if(isStarted) {
       opt.compile(item, (typeof _opt === 'function' ? _opt : _done));
       if(opt.watch) {
-        watchItem(item);
+        watchItem(item, opt.watch);
       }
     } else {
       fileList.push(item);
@@ -77,7 +77,7 @@ module.exports = function(thorin, opt, pluginName) {
         opt.compile(item, (e) => {
           done(e);
           if(opt.watch) {
-            watchItem(item);
+            watchItem(item, opt.watch);
           }
         });
       });
