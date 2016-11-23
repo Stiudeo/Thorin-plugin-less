@@ -1,9 +1,9 @@
 {
   "name": "thorin-plugin-less",
   "author": "UNLOQ Systems",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "dependencies": {
-    "less": "2.6.1"
+    "less": "2.7.1"
   },
   "description": "Thorin.js less plugin",
   "main": "index.js",
